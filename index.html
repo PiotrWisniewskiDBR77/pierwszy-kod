@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoFab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">TechnoFab</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#lines">Linie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="start" class="hero">
+        <h1>Nowoczesna Fabryka Przyszłości</h1>
+        <button class="btn-more">Zobacz więcej</button>
+    </section>
+
+    <section id="about" class="about">
+        <div class="lang-switch" hidden>
+            <button data-lang="pl">PL</button>
+            <button data-lang="en">EN</button>
+            <button data-lang="de">DE</button>
+        </div>
+        <div class="about-content" lang="pl">
+            <h2>O nas</h2>
+            <p>TechnoFab to lider w branży przemysłowej, oferujący nowoczesne linie produkcyjne.</p>
+        </div>
+        <div class="about-content" lang="en" hidden>
+            <h2>About Us</h2>
+            <p>TechnoFab is an industrial leader providing cutting-edge production lines.</p>
+        </div>
+        <div class="about-content" lang="de" hidden>
+            <h2>Über uns</h2>
+            <p>TechnoFab ist ein Industriemarktführer mit modernen Produktionslinien.</p>
+        </div>
+    </section>
+
+    <section id="lines" class="lines">
+        <h2>Linie Produkcyjne</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🛠️</div>
+                <h3>CNC</h3>
+                <p>Precyzyjne obrabiarki sterowane numerycznie.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🔧</div>
+                <h3>Montaż</h3>
+                <p>Zautomatyzowane stacje montażowe.</p>
+            </div>
+            <div class="card">
+                <div class="icon">✔️</div>
+                <h3>Kontrola jakości</h3>
+                <p>Zaawansowane systemy weryfikacji produktów.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 TechnoFab</p>
+        <div class="language-buttons">
+            <button data-lang="pl">PL</button>
+            <button data-lang="en">EN</button>
+            <button data-lang="de">DE</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
